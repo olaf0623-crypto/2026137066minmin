@@ -32,9 +32,23 @@ public class RewardCalc : MonoBehaviour
 
         Debug.Log("플레이타임" + (hours) + "시간" + (minutes) + "분" + (seconds) + "초");
 
-        int perPersonGold = gold / members;
-        int LeaderBonus = gold % members;
+        int perGold = gold / members;
+        int leaderBonus = gold % members;
+        
+        Debug.Log("1인당 " + perGold + "G, 리더 보너스 " + leaderBonus + "G");
 
-        Debug.Log("골드" + perPersonGold + "G" + "리더보너스" + LeaderBonus);
+        int baseExp = kills * expPerKill;
+        int totalExp = (int)(baseExp * expRate);
+
+        Debug.Log("경험치 " + totalExp + " (기본 " + baseExp + ")");
+
+        int level = 1 + (totalExp / 100);
+        int nextExp = 100 - (totalExp % 100);
+
+        Debug.Log("Lv " + level + ", 다음 레벨까지 " + nextExp);
+
+        float avgDamage = (float)totalDamage / hits;
+
+        Debug.Log("평균 데미지 " + avgDamage);
     }
 }

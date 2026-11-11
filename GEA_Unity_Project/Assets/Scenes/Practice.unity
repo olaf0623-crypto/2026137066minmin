@@ -128,9 +128,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 145770129}
-  - component: {fileID: 145770128}
-  - component: {fileID: 145770130}
-  - component: {fileID: 145770131}
   - component: {fileID: 145770132}
   m_Layer: 0
   m_Name: Tester
@@ -139,25 +136,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &145770128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145770127}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 299d48921502fea42abe345264410677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lesson09
-  itemName: "\uD3EC\uC158"
-  price: 30
-  discount: 0.5
-  isSoldOut: 0
-  attack: 10
-  gold: 100
-  potion: 3
 --- !u!4 &145770129
 Transform:
   m_ObjectHideFlags: 0
@@ -173,40 +151,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &145770130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145770127}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85a2727cc303a441bfca6233e5a0fcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StartPractice
-  playerName: "\uC624\uC2B9\uBBFC"
-  Level: 99
-  Attack: 555
-  isBoss: 1
-  itemName: "\uD3EC\uC158"
-  price: 30
-  discount: 0.5
-  isSoldOut: 0
---- !u!114 &145770131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145770127}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd2ddbe1ffdb93d4b9a162bfaf45de8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HpPractice
-  currentHP: 1
-  maxHP: 3
 --- !u!114 &145770132
 MonoBehaviour:
   m_ObjectHideFlags: 0
